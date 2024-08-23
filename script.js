@@ -26,16 +26,16 @@ async function checkWeather(city) {  //Await fun wait for api response
         document.querySelector(".wind").innerHTML = data.wind.speed + "km/hr";
 
         if (data.weather[0].main == "Clouds") {
-            weatherIcon.src = "/Weather App/weather-app-img/images/clouds.png";
+            weatherIcon.src = "clouds.png";
         }
         else if (data.weather[0].main == "Rain") {
-            weatherIcon.src = "/Weather App/weather-app-img/images/rain.png";
+            weatherIcon.src = "rain.png";
         }
         else if (data.weather[0].main == "Drizzle") {
-            weatherIcon.src = "/Weather App/weather-app-img/images/drizzle.png";
+            weatherIcon.src = "drizzle.png";
         }
         else if (data.weather[0].main == "Mist") {
-            weatherIcon.src = "/Weather App/weather-app-img/images/mist.png";
+            weatherIcon.src = "mist.png";
         }
 
         document.querySelector(".weather").style.display = "block";
